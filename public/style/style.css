@@ -99,3 +99,46 @@ body{
         width: 100%;
     }
 }
+.nhacnen{
+    position: absolute;
+    width: 0px !important;
+    height: 0px !important;
+    
+}
+
+
+.wrapper{
+    width: 100%;
+    font-family: "Open Sans", Sans-serif;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 40px;
+    background: #f8f9fc;
+}
+.carousel .card{
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid #dfdede;
+    border-radius: 0%;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 100px;
+    padding-right: 65px;
+    padding-left: 65px;
+}
+.owl-dot{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid black;
+    background: rgb(189, 187, 221) !important;
+    transition:  all 0.3s ease;
+}
+.owl-dot:hover,
+.owl-dot.active{
+    background: #463c9f !important;
+}
