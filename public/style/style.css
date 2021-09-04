@@ -1,0 +1,107 @@
+
+body{
+    box-sizing: border-box;
+    background-color: #FFFFCC;
+    background-position: top;
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    padding: 0px;    
+    height: 100%;
+}
+.chonqua{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.banh img{
+    width: 400px;
+}
+.banh{
+    text-align: center;
+}
+.container{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buntons{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    position: relative;
+    margin: 0px 32px;
+    display: table;
+}
+.btn-1{
+    color: #000;
+}
+.btn-1::after, .btn-1::before{
+    border: 3px solid #000;
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    
+}
+.btn-1:hover::after{
+    transform:  translate(-5px, -5px);
+}
+.btn-1:hover::before{
+    transform:  translate(5px, 5px);
+}
+.btn-2{
+    margin-top: 30px;
+    overflow: hidden;
+    color: #FFF;
+    border-radius: 30px;
+    box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5),
+    0 0 0 0 rgba(39, 200, 255, 0.5);
+    transition: transform 0.3s  ease, box-shadow 0.3s ease;
+}
+.btn-2::after{
+    content: "";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-color: #ff3cac;
+    background-image: linear-gradient(
+        225deg,
+        #27d86c 0%, 
+        #26caf8 50%,
+        #c625d0 100%
+    );
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+.btn-2:hover{
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, 0.5),10px -10px 25px 0 rgba(39, 200, 255, 0.5) ;
+}
+.btn-3:hover::after{
+    transform: rotate(150deg);
+}
+@media only screen and (max-width: 400px) {
+    .banh img{
+        width: 100%;
+    }
+}
+.nhacnen{
+    position: absolute;
+    width: 0px !important;
+    height: 0px !important;
+    
+}
